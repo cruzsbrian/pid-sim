@@ -138,6 +138,7 @@ function makeGraph() {
 	// value
 	var voltageAxis = new AmCharts.ValueAxis();
 	voltageAxis.id = "voltageAxis";
+	voltageAxis.title = "Voltage";
 	voltageAxis.minimum = -15;
 	voltageAxis.maximum = 15;
 	voltageAxis.position = "right";
@@ -145,6 +146,7 @@ function makeGraph() {
 	
 	var posAxis = new AmCharts.ValueAxis();
 	posAxis.id = "posAxis";
+	posAxis.title = "Position";
 	posAxis.maximum = 2.5;
 	posAxis.synchronizeWithAxis(voltageAxis);
 	chart.addValueAxis(posAxis);
